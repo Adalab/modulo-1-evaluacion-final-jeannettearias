@@ -1,0 +1,30 @@
+.footer {
+    display: block; //see which is better, display flex or display block. 
+    background-color: #4a4a4a;
+    padding: 3%; //adds space around the content inside the footer. 
+    margin-top: 2%; //adds margin to the top of the footer, pushing it down from the content above it.
+    
+  }
+  
+  ._copyright {
+    display: inline-block;
+    text-align: left; //aligns the content (in this case, the <p> tag) to the left or right horizontally within the footer.
+    color: #fff;
+    padding: 1%;
+  }
+  
+  
+  ._footer_list {
+    text-align: right;
+    list-style: none; //Remove bullets
+    justify-content: center;
+    
+  }
+  
+  ._footer_link {
+    margin-right: 100px; // Add margin between links
+    line-height: 2; // Add space between lines
+    color: #fff;
+
+  }
+  
