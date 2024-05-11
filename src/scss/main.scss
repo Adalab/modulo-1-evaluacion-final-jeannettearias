@@ -1,3 +1,13 @@
+:root {
+   font-family: "Roboto Serif", serif;
+   font-optical-sizing: auto;
+   font-weight: normal;
+   font-style: normal;
+   font-variation-settings:
+     "wdth" 100,
+     "GRAD" 0;
+   color: white
+}
 
 @import './layout/header';
 @import './layout/hero';
@@ -8,7 +18,8 @@
 
 
 ._main {
-   background-color: white;
+
+   background-color: grey; //meanwhile resolve the problems. to see the text content
    width: 100%;
 
 }
