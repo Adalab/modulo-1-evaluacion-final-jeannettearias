@@ -56,6 +56,7 @@ export default defineConfig({
   },
   server: {
     open: "/index.html",
+    port: 4001
   },
   plugins: [
     injectHTML(),
