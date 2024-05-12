@@ -1,35 +1,46 @@
-._background_image {
-  width: 100%;
-  object-fit:cover; 
-  height: 100%;
-}
 
-._hero_section {
+._container {
   display: flex;
   justify-content: center;
+  align-items: center;
   
+}
+
+._background_image {
+  background-image: cover;
+  width: 100vw;
+  height: 100vh;
+  background-image: url(/images/cover.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 
 }
 
 ._box {
   display: flex;
-  position: absolute; //put the content at the center
-  color: white;
-
   flex-direction: column;
-  margin-inline: 2em;
-}
-
-
-._center_aligned {
   align-items: center;
-  margin-inline: auto;
+  padding: 10%;
+  color: white;
+ //margin-inline: 2em;
 
 }
 
-._hero_button {
-  display: flex;
-  margin-inline: 2em;
+._title {
+  font-size: large;
+  margin-bottom: 30%;
 
+}
+
+._paragraph {
+
+  //text-align: center;
+  border: 1px solid gray;
+
+}
+
+._button {
+  margin-inline: 2em;
 
 }
