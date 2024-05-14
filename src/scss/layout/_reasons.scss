@@ -1,21 +1,111 @@
-._grid_section_2 {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); // 3 columns with 1
-  justify-content: center;
-  align-items: center;
-  gap: 2%; // space between images. 
-
+._reasons_section_2 {
+ display: grid;
+ grid-template-rows: center;
+ 
 }
 
-._image_grid {
-  width: 60%;
-  height: 60%;
-  
+._grid_article {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); // 3 column 
+  justify-content: center;
+  gap: 20px; // space between images. 
+  align-items: center;
 
 }
 
 ._grid_picture img {
-  border-radius: 50%;
-  align-content: center;
+  border-radius: 60%; // achieve the images are rounded
+  text-align: center;
 
 }
+
+._image_grid {
+  width: 114px;
+  height: 114px;
+  text-align: center;
+  height: auto;
+
+}
+
+._image_label {
+  text-align: center;
+  gap: 15%;
+
+}
+
+
+/* working with the titles over the images
+ */
+._reasons_section_2 {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  gap: 10%; //space between title (content) and images. 
+
+}
+
+ ._sub_sub_subtile {
+  text-align: center;  
+  margin-top: 5%;
+
+}
+
+._subtitle {
+  text-align: center;
+  font-size: normal;
+  margin-top: 5%;
+
+}
+/* Fin */
+
+._grid_button {
+  color: white;
+  background-color: #6c933e;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 22.5px;
+  cursor: pointer;
+
+  
+}
+
+._grid_button:hover {
+  background-color: #8cab68;
+}
+
+.centered {
+  justify-content: center;
+
+}
+
+/* Make it responsived */
+
+//@media only screen and (max-width: 768px) {
+
+  @media (max-width: 768px) {
+    ._reasons_section_2 {
+      display: flexbox;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: nowrap;
+    }
+
+  ._grid_article {
+    grid-template-columns: repeat(1, 1fr); // 3 columns with 1 
+    gap: 2%; // space between images. 
+    justify-content: center;  
+
+  }
+  
+}
+
+
+/* styles to minimize screen */
+@media only screen and (max-width: 1000px) {
+
+  ._container, ._reasons_section_1, ._reasons_section_2 {
+    margin-bottom: 2%;
+
+  }
+}
+
