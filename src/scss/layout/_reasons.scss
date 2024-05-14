@@ -1,7 +1,24 @@
+//////////// SECTION 1 /////////////////
+._reasons_section_1 {
+  display: flex;
+
+}
+
+
+
+
+
+
+
+
+
+/// //////////// SECTION 2 //////////////////// 
+
 ._reasons_section_2 {
  display: grid;
  grid-template-rows: center;
- 
+ background-color: #d9e4cc;
+ margin-top: auto;
 }
 
 ._grid_article {
@@ -34,8 +51,7 @@
 }
 
 
-/* working with the titles over the images
- */
+/* working with the titles over the images*/
 ._reasons_section_2 {
   display: grid;
   justify-content: center;
@@ -78,7 +94,10 @@
 
 }
 
-/* Make it responsived */
+
+
+
+//////////// WEB RESPONSIVE ///////////////
 
 //@media only screen and (max-width: 768px) {
 
