@@ -4,6 +4,7 @@
   flex-direction: column;
   justify-content: center; 
   align-items: center; 
+  width: 100%;
   height: 100%; 
   
 }
@@ -26,18 +27,24 @@
   justify-content: flex-end; 
   align-items: center;
   height: 100vh; 
-  color: white;
- //margin-inline: 2em;
-
+ 
+ 
 }
 
 ._hero_title {
   text-align: center;
-  margin-bottom: 1em;
+  margin-bottom: 1%;
   margin-inline: auto; // set and distribuite the margin in both sides
-  font-size: 3em;
   text-align: center;
-  
+  font-family: RobotoSlab;
+  font-size: 36px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.67;
+  letter-spacing: normal;
+  text-align: center;
+  color: #ffffff;
 
 }
 
@@ -45,6 +52,15 @@
   margin-top: 5%;
   font-size: 1.5em;
   text-align: center;
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.19;
+  letter-spacing: normal;
+  text-align: center;
+  color: #ffffff;
   
 
 }
@@ -72,3 +88,23 @@
   align-items: center;
   height: 30%;
 }
+
+@media (min-width:768px) {
+  ._hero_container {
+    max-width: 100%; 
+    text-align: center;
+
+  }
+
+  ._hero_title {
+    font-size: 55px;
+    justify-content: center;
+    
+  }
+
+  ._hero_paragraph {
+    font-size: 35px;
+  }
+}
+
+  /* END */
