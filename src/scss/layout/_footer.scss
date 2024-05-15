@@ -13,16 +13,29 @@
   }
   
   ._footer_list_1 {
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.88;
     text-align: center;
     list-style: none; //Remove bullets
     margin-bottom: 5%;
-    
+    text-transform:uppercase;
   }
 
   ._footer_list_2 {
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.88;
     text-align: center;
     list-style: none; //Remove bullets
     margin-bottom: 5%;
+    text-transform:uppercase;
     
   }
   
@@ -46,22 +59,33 @@
   
 @media (min-width: 768px) {
   ._footer {
-    padding: 3%;
+    text-align: center;
+    width: 100%;
     
   }
 
-  ._footer_list {
-    text-align: right;
-    width: 100%;
+  ._footer_list_1 {
+    padding: 0;
+    margin: 0;
   }
 
-._copyright {
-  text-align: left; //aligns the content (in this case, the <p> tag) to the left or right horizontally within the footer.
-  width: 100%;
+  ._copyright, ._footer_list_1, ._footer_list_2 {
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    display: inline-block;
+    text-align: right;
+    font-size: 16px;
+    padding: 2%;
+    min-width: 300px;
+    width: 33%;
+  }
+
+  ._copyright {
+    text-align: left;
+  }
 
 }
 
-}
 
 @media (min-width: 1200px) {
     ._footer {
