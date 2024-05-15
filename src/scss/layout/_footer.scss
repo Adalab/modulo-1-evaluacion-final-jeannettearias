@@ -3,21 +3,29 @@
     background-color: #4a4a4a;
     padding: 1%; //adds space around the content inside the footer. 
     margin-top: 0%; //adds margin to the top of the footer, pushing it down from the content above it.
-    padding: 1%;
+    padding: 6%;
   }
   
   ._copyright {
-    display: inline-block;
-    text-align: left; //aligns the content (in this case, the <p> tag) to the left or right horizontally within the footer.
+    text-align: center;
     color: #fff;
-    padding: 1%;
+
   }
   
-  ._footer_list {
+  ._footer_list_1 {
     text-align: center;
     list-style: none; //Remove bullets
+    margin-bottom: 5%;
     
   }
+
+  ._footer_list_2 {
+    text-align: center;
+    list-style: none; //Remove bullets
+    margin-bottom: 5%;
+    
+  }
+  
   ._footer_link a:link {
     color: blue;
     text-decoration: none;
@@ -39,6 +47,25 @@
 @media (min-width: 768px) {
   ._footer {
     padding: 3%;
+    
+  }
+
+  ._footer_list {
+    text-align: right;
+    width: 100%;
+  }
+
+._copyright {
+  text-align: left; //aligns the content (in this case, the <p> tag) to the left or right horizontally within the footer.
+  width: 100%;
+
+}
+
+}
+
+@media (min-width: 1200px) {
+    ._footer {
+    padding: 3%;
   }
 
   ._footer_list {
@@ -47,6 +74,4 @@
 ._copyright {
   text-align: left;
 }
-
 }
-
