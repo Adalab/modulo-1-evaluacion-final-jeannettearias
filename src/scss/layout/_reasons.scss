@@ -14,25 +14,18 @@
 
 }
 
+/* working with the titles and paragraph over the images*/
+
 ._reasons_sub_subtile {
+  font-family: Roboto-Regular;
   margin-top: 2%;
   display: block;
   color: #6c933e;
   font-size: smaller;
 
 }
-/* working with the titles over the images*/
-._reasons_sub_sub_subtile {
-  color: #626262;
-  font-size:smaller ;
-  font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
-  letter-spacing: normal;
-  
-}
 ._reasons_subtitle {
-  font-family: RobotoSlab;
+  font-family: RobotoSlab-Bold;
   font-size:x-large;
   font-weight: bold;
   font-stretch: normal;
@@ -40,14 +33,16 @@
   letter-spacing: normal;
 
 }
-/* Fin */
 
 ._reasons_paragraph {
+  color: #4a4a4a;
+  font-family: Roboto-Regular;
   margin-top: 2%;
-  margin-bottom: 5%;
-  max-width: 80%;
+  margin-bottom: 10%;
+
 
 }
+/* Fin */
 
 ._reasons_comprar_button {
   color: #6c933e;
