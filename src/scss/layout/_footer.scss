@@ -3,7 +3,7 @@
     background-color: #4a4a4a;
     padding: 1%; //adds space around the content inside the footer. 
     margin-top: 0%; //adds margin to the top of the footer, pushing it down from the content above it.
-    
+    padding: 1%;
   }
   
   ._copyright {
@@ -14,11 +14,21 @@
   }
   
   ._footer_list {
-    text-align: right;
+    text-align: center;
     list-style: none; //Remove bullets
     
   }
-  
+  ._footer_link a:link {
+    color: blue;
+    text-decoration: none;
+  }
+  ._footer_link a:visited {
+    color: white;
+  }
+  ._footer_link a:hover {
+    color: rgb(127, 56, 220);
+  }
+
   ._footer_link {
     margin-right: 0,5%; // Add margin between links
     line-height: 2; // Add space between lines
@@ -26,3 +36,17 @@
     
   }
   
+@media (min-width: 768px) {
+  ._footer {
+    padding: 3%;
+  }
+
+  ._footer_list {
+    text-align: right;
+  }
+._copyright {
+  text-align: left;
+}
+
+}
+
