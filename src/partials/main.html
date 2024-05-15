@@ -1,4 +1,10 @@
+<!-- MAIN HTML FILE INCLUDES TWO MAIN SECTIONS, THE HERO AND THE REASONS ONE, 
+  WHICH HAVE A SEPARATE SCSS FILE EACH ONE -->
+
 <main class="_main">
+
+  <!-- HERO SECTION  -->
+
   <div id="start"></div>
   <section class="_hero_background_image">
     <div class="_hero_container">
@@ -10,49 +16,61 @@
         </a>
       </div>
   </section>
+  <!-- FIN -->
 
 
+  <!-- REASONS SECTIONS  -->
 
-  <section class="_reasons_section_1 _centered">
+  <section class="_reasons_section_1">
     <article class="_reasons_article">
       <h5 class="_reasons_sub_subtile">HISTORIAS, MODA Y ROPA DEPORTIVA</h5>
       <h2 class="_reasons_subtitle">TU TIENDA DE DEPORTE</h2>
       <p class="_reasons_paragraph">El deporte nos mantiene en forma. Nos mantiene alerta. Nuestra ropa deportiva para
         hombre y mujer te ofrece
         las últimas tecnologías, a la altura de tu rendimiento, para que superes tu mejor marca personal.</p>
+      <div>
+        <button class="_reasons_comprar_button">Comprar</button>
+      </div>
     </article>
-    <div>
-      <button class="_reasons_comprar_button _reasons_centered">Comprar</button>
-    </div>
+
   </section>
 
-  <section class="_reasons_section_2 _centered">
+
+
+
+
+
+  <section class="_reasons_section_2">
 
     <h4 class="_reasons_sub_sub_subtile">¡Prepáralos con tus marcas favoritas!</h4>
     <h2 class="_reasons_subtitle">VUELTA AL COLE</h2>
 
     <article class="_reasons_grid_article">
-      <div class="_reasons_grid_picture">
+
+      <div class="_reasons_centered">
         <img class="_reasons_image_grid" src="./images/lpbts-mod05-img01-desk.png" alt="schoolbag picture">
-        <h4 class="_image_label">Mochilas escolares</h4>
+        <h4 class="_reasons_image_label">Mochilas escolares</h4>
       </div>
-      <div class="_reasons_grid_picture">
+      <div class="_reasons_centered">
         <img class="_reasons_image_grid" src="./images/lpbts-mod05-img04-mob.png" alt="school pencil cases picture">
         <h4 class="_reasons_image_label">Estuches</h4>
       </div>
-      <div class="_reasons_grid_picture">
+      <div class="_reasons_centered">
         <img class="_reasons_image_grid" src="./images/lpbts-mod05-img03-mob.png" alt="sports bags pictures">
         <h4 class="_reasons_image_label">Bolsas de deporte</h4>
       </div>
 
-      <div>
-        <button class="_reasons_grid_button">Empezar ahora</button>
-      </div>
     </article>
+    <div>
+      <button class="_reasons_grid_button">Empezar ahora</button>
+    </div>
 
+    <!-- div at the end of the section linked -->
+    <div id="final"></div>
+    <a href="#start" class="_hero_button">
+      <img class="_hero_button_image" src="./images/ico-arrow.svg" alt="scroll up button">
+    </a>
   </section>
-  <div id="final"></div> <!-- Coloca este div al final de tu contenido -->
-  <a href="#start" class="_hero_button">
-    <img class="_hero_button_image" src="./images/ico-scroll-up.svg" alt="scroll up button">
-  </a>
+  <!-- FIN -->
+
 </main>

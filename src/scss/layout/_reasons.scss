@@ -1,37 +1,37 @@
 //////////// SECTION 1 /////////////////
-._reasons_section_1 ._reasons_centered {
+._reasons_section_1 {
   display: inline;
-  margin-bottom: 1em;
-}
+  align-self: left;
+  padding: 8%;
 
-._reasons_centered {
-  display: inline;
-  margin-bottom: 1em;
 }
 
 ._reasons_article {
-  text-align: center;
-  padding: 10%;
+  margin-inline: 1em;
+  text-align: left;
+  padding: 2%;
   
+
 }
 
-
 ._reasons_sub_subtile {
+  margin-top: 2%;
   display: block;
-  text-align: center;
   color: #6c933e;
   font-size: smaller;
 
 }
 
 ._reasons_subtitle {
-  text-align: center;
-
+  margin-top: 1%;
+  
 }
 
 ._reasons_paragraph {
-  text-align: center;
-  padding: 8%;
+  margin-top: 2%;
+  margin-bottom: 5%;
+  max-width: 80%;
+
 }
 
 ._reasons_comprar_button {
@@ -41,69 +41,84 @@
   border: solid 2px #6c933e;
   border-radius: 22.5px;
   cursor: pointer;
+  justify-self: left;
+  
 }
-
 ._reasons_comprar_button:hover {
   background-color: #c5d3b6;
 }
 
-
-
 /// //////////// SECTION 2 //////////////////// 
 
-._reasons_section_2  {
- display: grid;
- grid-template-rows: center;
- background-color: #d9e4cc;
- margin-top: auto;
- 
+._reasons_section_2 {
+  justify-content: center;
+  background-color: #d9e4cc;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5%; 
+  text-align: center;
+  justify-content: center;
+
+
 }
+
+/* working with the titles over the images*/
+._reasons_sub_sub_subtile {
+  text-align: center;
+  color: #626262;
+  font-size:smaller ;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+}
+._reasons_subtitle {
+  text-align: center;
+  font-family: RobotoSlab;
+  font-size:x-large;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  text-align: center;
+
+}
+/* Fin */
+
 
 ._reasons_grid_article {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); // 3 column 
-  justify-content: center;
-  gap: 20px; // space between images. 
-  align-items: center;
+  align-content: center;
+  margin-inline: auto;
+  width: 100%;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 2%;
+
 }
 
-._reasons_grid_picture img {
-  border-radius: 60%; // achieve the images are rounded
+._reasons_centered {
+  align-self: center;
+  padding-left: calc(50%);
+  padding-right: calc(50%);
   text-align: center;
+  justify-content: center;
 }
 
 ._reasons_image_grid {
   width: 114px;
   height: 114px;
-  text-align: center;
-  height: auto;
+  grid-area: auto;
+  margin-top: 10%;
+  border-radius: 100%;
+  align-items: center;
+  justify-content: center;
+
 }
 
 ._reasons_image_label {
-  text-align: center;
-  gap: 15%;
-}
-
-
-/* working with the titles over the images*/
-._reasons_section_2 {
-  display: grid;
-  justify-content: center;
-  align-items: center;
-  gap: 10%; //space between title (content) and images. 
-}
-
- ._reasons_sub_sub_subtile {
-  text-align: center;  
   margin-top: 5%;
-}
-
-._reasons_subtitle {
   text-align: center;
-  font-size: normal;
-  margin-top: 5%;
 }
-/* Fin */
 
 ._reasons_grid_button {
   color: white;
@@ -112,6 +127,9 @@
   border: none;
   border-radius: 22.5px;
   cursor: pointer;
+  margin-top: 10%;
+  align-self: center;
+
 }
 
 ._reasons_grid_button:hover {
@@ -126,30 +144,17 @@
 
 //@media only screen and (max-width: 768px) {
 
-  @media (max-width: 768px) {
-    ._reasons_section_2 {
-      display: flexbox;
-      justify-content: center;
-      align-items: center;
-      flex-wrap: nowrap;
-    }
-
-  ._reasons_grid_article {
-    grid-template-columns: repeat(1, 1fr); // 3 columns with 1 
-    gap: 2%; // space between images. 
-    justify-content: center;  
-
-  }
   
-}
-
-
-/* styles to minimize screen */
-@media only screen and (max-width: 1000px) {
-
-  ._reasons_container, ._reasons_section_1, ._reasons_section_2 {
-    margin-bottom: 2%;
-
+@media (max-width:768px) {
+  ._reasons_grid_article {
+    grid-template-columns: 1fr;
+    /*
+    display: flexbox;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;*/
   }
-}
 
+
+
+}
